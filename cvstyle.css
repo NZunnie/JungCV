@@ -1,0 +1,207 @@
+/* cvstyle.css */
+
+/* Customize navigation bar */
+.navbar {
+    background-color: #343a40 !important;
+}
+
+.nav-link {
+    color: #ffffff !important;
+}
+.navbar-logo img {
+    max-width: 30%;
+    height: auto;
+}
+
+/* Style header */
+#header {
+    background-color: #eaeff5 ;
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #343a40;
+    padding: 50px;
+}
+
+#header h1 {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+#header p {
+    font-size: 1.5rem;
+}
+/* Header image style */
+.header-image img{
+    max-width: 90%;
+    max-height: 50%; /* 이미지가 화면의 50% 이내로 유지되도록 설정 */
+    object-fit: cover;
+    border-radius: 2%;
+    margin-bottom: 20px; /* 이미지와 텍스트 사이의 간격 조정 */
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+    #header .container{
+        flex-direction: column; /* 세로 방향으로 정렬 */
+        padding: 10px; /* 작은 화면에서 좀 더 적절한 간격 */
+    }
+
+    .header-image {
+        max-height: 30%; /* 작은 화면에서 이미지의 크기를 줄임 */
+        margin-bottom: 10px; /* 작은 화면에서 이미지와 텍스트 사이의 간격을 줄임 */
+    }
+
+    #header h1 {
+        font-size: 3rem; /* 작은 화면에서 제목의 크기를 줄임 */
+    }
+
+    #header p {
+        font-size: 1.25rem; /* 작은 화면에서 텍스트의 크기를 줄임 */
+    }
+}
+
+/* Section titles */
+.section-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+/* About me section */
+#about h4 {
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+#about p, #about .lead {
+    font-size: 1.125rem;
+    color: #333;
+}
+#about i {
+    color: #d62072; /* 보라색으로 변경 */
+}
+.contact-icon {
+    color: #01172e !important; 
+    transition: color 0.3s ease;
+}
+.contact-icon:hover {
+    color: #0056b3 !important; 
+}
+
+/* Experience section style */
+#experience .timeline {
+    position: relative;
+    margin-left: 20px; /* 타임라인을 좌측으로 이동 */
+}
+
+#experience .timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 5px; /* 타임라인 선의 너비를 조정 */
+    background-color: #550254; /* 타임라인 색상 */
+    left: 0;
+    margin-left: -1px; /* 타임라인 선의 가운데 정렬 */
+}
+
+#experience .timeline-item {
+    margin-bottom: 20px; /* 각 항목 사이의 간격을 줄임 */
+    margin-left: 30px;
+    position: relative;
+}
+
+#experience .timeline-content {
+    background-color: #ebe7fb; /* 박스의 배경색 */
+    padding: 10px; /* 박스의 안쪽 여백 */
+    border-radius: 5px; /* 박스의 테두리를 둥글게 */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+}
+
+#experience .timeline-content h3 {
+    margin-top: 0;
+    font-size: 1.25rem; /* 제목의 글꼴 크기 */
+}
+
+#experience .timeline-content p {
+    margin-bottom: 5px;
+    font-size: 1rem; /* 내용의 글꼴 크기 */
+    color: #6c757d; /* 텍스트 색상 */
+}
+
+/* Skills section */
+#skills {
+    background-color: #dbd5f3; 
+}
+#skills h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#skills ul li {
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Project cards */
+.card {
+    margin-bottom: 30px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+.project-card {
+    height: 600px; /* Fixed height for uniform cards */
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-card img {
+    height: 300px; /* Adjust image height to fit within the card */
+    object-fit: fill; /* Ensures the image covers the area without distortion */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.project-card img:hover {
+    transform: scale(1.05); /* Hover effect */
+}
+
+
+
+
+
+/* Contact section */
+#contact {
+    background-color: #dbd5f3; 
+}
+#contact .lead {
+    font-size: 1.125rem;
+}
+#contact img {
+    max-width: 180px; 
+    height: auto; 
+}
+
+/* Adjust background color for alternating sections */
+.bg-light {
+    background-color: #f8f9fa !important;
+}
