@@ -7,13 +7,24 @@
     transition: all 0.3s ease; 
 }
 
-/* Hover Effect */
 .btn-primary:hover {
     background-color: #ffffff; 
     color: #ff5757;
     font-style:inherit; 
     transform: scale(1.05); 
     border: 1px solid #ff5757;
+}
+
+.btn-secondary {
+    background-color: #563d7c;
+    border: none;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.btn-secondary:hover {
+    background-color: #6f42c1;
+    transform: scale(1.05);
+    color: white;
 }
 /* Customize navigation bar */
 .navbar {
@@ -56,7 +67,7 @@
     height: auto;
 }
 
-/* Style header */
+/* Header */
 #header {
     background-color: #eaeff5 ;
     background-size: cover;
@@ -118,7 +129,6 @@
     align-items: center !important;
 }
 
-/* Style for About Section */
 .about-icon i {
     color: #6f42c1;
     transition: color 0.3s;
@@ -221,26 +231,12 @@
 }
 
 
-.btn-secondary {
-    background-color: #563d7c;
-    border: none;
-    transition: background-color 0.2s, transform 0.2s;
-}
-
-.btn-secondary:hover {
-    background-color: #6f42c1;
-    transform: scale(1.05);
-    color: white;
-}
-   
-
 video {
     width: 100%;
     height: auto;
     border-radius: 10px;
     margin-bottom: 20px;
 }
-
 
 .styled-video {
     width: 100%;
@@ -250,13 +246,10 @@ video {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* 그림자 효과 */
     outline: none; /* 기본 아웃라인 제거 */
 }
-
-/* Hover effect */
 .styled-video:hover {
     transform: scale(1.02); /* 약간 확대 */
     transition: transform 0.2s ease-in-out;
 }
-
 
 /* Style for project notes */
 .project-notes ul.note-list {
@@ -276,8 +269,6 @@ video {
     margin-right: 10px;
     padding-left: 20px;
 }
-
-
 
 /* Adjust background color for alternating sections */
 .bg-light {
