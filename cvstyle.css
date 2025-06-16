@@ -332,6 +332,7 @@ video {
     #header p {
         font-size: 1.25rem; 
     }
+    
     .skill-item {
         flex: 1 0 50%;
         max-width: 50%;
@@ -340,4 +341,5 @@ video {
         flex: 0 0 50%;
         max-width: 50%;
     }
+
 }
